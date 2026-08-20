@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+
+# Data artifacts (never commit)
+*.parquet
+*.csv
+*.tsv
+*.gz
+*.zip
+*.jsonl
+
+# Local outputs/logs/inventory
+logs/
+inventory/
+out/
+output/
+reports/
+
+# Local/staging directories from source workspace
+pbp_csv_stage/files/
+pbp_parquet/play_by_play_*.parquet
+bronze_reference/stadiums.csv
+noaa_ref/isd-history.csv
+
+# Editor/system
+.DS_Store
+.vscode/
+.idea/
+
+# Cloud/local credentials and caches
+.config/
+.gsutil/
+.cache/
+.codex/
+.gemini/
+.npm/
+.local/
+.docker/
+.codeoss/
+
+# Snowflake local cache
+**/ocsp_response_cache.json
+**/ocsp_response_validation_cache.json
